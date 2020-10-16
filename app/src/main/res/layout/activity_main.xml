@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="textPersonName"
+        android:hint="Enter your name"/>
+
+    <EditText
+        android:id="@+id/edit_text_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/edit_text_name"
+        android:inputType="textPersonName"
+        android:hint="Enter your department"/>
+
+    <EditText
+        android:id="@+id/edit_text_faculty"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/edit_text_department"
+        android:inputType="textPersonName"
+        android:hint="Enter your faculty"/>
+
+    <EditText
+        android:id="@+id/edit_text_registration_number"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/edit_text_faculty"
+        android:inputType="textPersonName"
+        android:hint="Enter your Registration Number"/>
+
+   <TextView
+       android:id="@+id/hint_on_course_selection"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_marginStart="8dp"
+       android:layout_marginEnd="8dp"
+       android:text="please select base on the number of courses for the semester"
+       android:textColor="#827717"
+       android:layout_below="@+id/edit_text_registration_number"/>
+
+    <EditText
+        android:id="@+id/edit_text_course_name1"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/hint_on_course_selection"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name1" />
+
+    <Spinner
+        android:id="@+id/spinner_credit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade1" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name2"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit1"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name2" />
+
+    <Spinner
+        android:id="@+id/spinner_credit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade2" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name3"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit2"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name3" />
+
+    <Spinner
+        android:id="@+id/spinner_credit3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade3" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name4"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit3"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name4" />
+
+    <Spinner
+        android:id="@+id/spinner_credit4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade4" />
+
+
+
+    <EditText
+        android:id="@+id/edit_text_course_name5"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit4"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name5" />
+
+    <Spinner
+        android:id="@+id/spinner_credit5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade5" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name6"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit5"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name6" />
+
+    <Spinner
+        android:id="@+id/spinner_credit6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade6" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name7"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit6"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name7" />
+
+    <Spinner
+        android:id="@+id/spinner_credit7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade7" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name8"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit7"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name8" />
+
+    <Spinner
+        android:id="@+id/spinner_credit8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade8" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name9"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit8"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name9" />
+
+    <Spinner
+        android:id="@+id/spinner_credit9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade9" />
+
+
+
+    <EditText
+        android:id="@+id/edit_text_course_name10"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit9"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name10" />
+
+    <Spinner
+        android:id="@+id/spinner_credit10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade10" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name11"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit10"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name11" />
+
+    <Spinner
+        android:id="@+id/spinner_credit11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade11" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name12"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit11"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name12" />
+
+    <Spinner
+        android:id="@+id/spinner_credit12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade12" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name13"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit12"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name13" />
+
+    <Spinner
+        android:id="@+id/spinner_credit13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade13" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name14"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit13"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name14" />
+
+    <Spinner
+        android:id="@+id/spinner_credit14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade14" />
+
+    <EditText
+        android:id="@+id/edit_text_course_name15"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/spinner_credit14"
+        android:inputType="textPersonName"
+        android:hint="Enter the course name"/>
+
+    <Spinner
+        android:id="@+id/spinner_grade15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/edit_text_course_name15" />
+
+    <Spinner
+        android:id="@+id/spinner_credit15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|end"
+        android:layout_below="@+id/spinner_grade15" />
+
+        <Button
+            android:id="@+id/add_and_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/spinner_credit15"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginStart="120dp"/>
+
+
+        <TextView
+            android:id="@+id/course_properties1"
+            android:layout_below="@+id/add_and_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties2"
+            android:layout_below="@+id/course_properties1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties3"
+            android:layout_below="@+id/course_properties2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties4"
+            android:layout_below="@+id/course_properties3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties5"
+            android:layout_below="@+id/course_properties4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties6"
+            android:layout_below="@+id/course_properties5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties7"
+            android:layout_below="@+id/course_properties6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties8"
+            android:layout_below="@+id/course_properties7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties9"
+            android:layout_below="@+id/course_properties8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties10"
+            android:layout_below="@+id/course_properties9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties11"
+            android:layout_below="@+id/course_properties10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties12"
+            android:layout_below="@+id/course_properties11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties13"
+            android:layout_below="@+id/course_properties12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties14"
+            android:layout_below="@+id/course_properties13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/course_properties15"
+            android:layout_below="@+id/course_properties14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/blank_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/course_properties15"/>
+
+        <TextView
+            android:id="@+id/text_view_personal_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/blank_space"/>
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/text_view_personal_details"/>
+
+        <TextView
+            android:id="@+id/text_view_faculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/text_view_name"/>
+
+        <TextView
+            android:id="@+id/text_view_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/text_view_faculty"/>
+
+        <TextView
+            android:id="@+id/text_view_reg_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/text_view_department"/>
+
+        <TextView
+            android:id="@+id/text_view_number_of_courses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/text_view_reg_num"/>
+
+        <TextView
+            android:id="@+id/text_view_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/text_view_number_of_courses"/>
+
+        <TextView
+            android:id="@+id/text_view_credit_loads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/text_view_score"/>
+
+        <TextView
+            android:id="@+id/text_view_grade_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/text_view_credit_loads"/>
+
+        <TextView
+            android:id="@+id/text_grade_division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/text_view_grade_point"/>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
